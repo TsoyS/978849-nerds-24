@@ -40,21 +40,28 @@
 		<h1>Магазин готовых шаблонов</h1>
 		<section class="filter">
 			<h2 class="visually__hidden">Фильтры</h2>
+			<h3>Стоимость</h3>
+			<input type="range" min="0" max="3000">
 			<h3>Сетка</h3>
-			<ul>
+<!-- 			<ul>
 				<li>
-					<input type="checkbox" id="adaptive" checked>
+					<input type="radio" id="adaptive" checked>
 					<label for="adaptive">Адаптивная</label>
 				</li>
 				<li>
-					<input type="checkbox" id="fixed">
+					<input type="radio" id="fixed">
 					<label for="fixed">Фиксированная</label>
 				</li>
 				<li>
-					<input type="checkbox" id="rubber">
+					<input type="radio" id="rubber">
 					<label for="rubber">Резиновая</label>
 				</li>
-			</ul>
+			</ul> -->
+			<form action="">
+				<p><input type="radio" name="grid" value="adaptive" checked>Адаптивная</p>
+				<p><input type="radio" name="grid" value="fixed">Фиксированная</p>
+				<p><input type="radio" name="grid" value="rubber">Резиновая</p>
+			</form>
 			<h3>Особенности</h3>
 			<ul>
 				<li>
@@ -84,22 +91,22 @@
 			<h2 class="visually__hidden">Каталог товаров</h2>
 			<ul class="catalog__list">
 				<li>
-					<img src="img/catalog/sedona.png" width="360" height="576" alt="Седона">
+					<img src="img/catalog/sedona.jpg" width="360" height="576" alt="Седона">
 				</li>
 				<li>
-					<img src="img/catalog/pink.png" width="360" height="576" alt="Пинк">
+					<img src="img/catalog/pink.jpg" width="360" height="576" alt="Пинк">
 				</li>
 				<li>
-					<img src="img/catalog/barbershop.png" width="360" height="576" alt="Барбершоп">
+					<img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Барбершоп">
 				</li>
 				<li>
-					<img src="img/catalog/mishka.png" width="360" height="576" alt="Мишка">
+					<img src="img/catalog/mishka.jpg" width="360" height="576" alt="Мишка">
 				</li>
 				<li>
-					<img src="img/catalog/aplus.png" width="360" height="576" alt="А+">
+					<img src="img/catalog/aplus.jpg" width="360" height="576" alt="А+">
 				</li>
 				<li>
-					<img src="img/catalog/kvast.png" width="360" height="576" alt="Кваст">
+					<img src="img/catalog/kvast.jpg" width="360" height="576" alt="Кваст">
 				</li>
 			</ul>
 		</section>

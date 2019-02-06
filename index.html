@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Дизайн-студия «Nerds»</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main__header">
@@ -35,12 +38,14 @@
 				</li>
 			</ul>
 		</nav>
+		<!-- <div class="main__slider">Slider</div> -->
 	</header>
 	<main class="container">
 		<h1 class="visually__hidden">Дизайн-студия Нёрдс</h1>
-		<section class="service">
+		<section class="features">
 			<ul>
 				<li>
+					<div class="feature__img"></div>
 					<h3>Веб-сайты</h3>
 					<p>
 						Мир никогда не будет прежним после того как увидит ваш сайт!
@@ -48,20 +53,99 @@
 					<button>Заказать</button>
 				</li>
 				<li>
-					<h3>Веб-сайты</h3>
+					<div class="feature__img"></div>
+					<h3>Приложения</h3>
 					<p>
-						Мир никогда не будет прежним после того как увидит ваш сайт!
+						Покорите топ-10 приложений в AppStore и Google Play
 					</p>
 					<button>Заказать</button>
 				</li>
 				<li>
-					<h3>Веб-сайты</h3>
+					<div class="feature__img"></div>
+					<h3>Презентации</h3>
 					<p>
-						Мир никогда не будет прежним после того как увидит ваш сайт!
+						Вы даже не подозреваете, 
+						насколько вы изумительны!
 					</p>
 					<button>Заказать</button>
 				</li>
 			</ul>
+			<hr class="separator">
+		</section>
+		<section class="about__us">
+			<ul class="two__columns">
+				<li>
+					<span class="subtitle">
+						Мы — маленькая, но гордая
+						дизайн-студия из Краснодара. 
+					</span>
+					<p class="info__text">
+						Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+						превыше креатива. Работаем не покладая рук, как роботы.
+					</p>
+					<p class="fonts__bold">
+						Выполняем заказы на разработку:
+					</p>
+					<ul class="services__text">
+						<li>Веб-сайтов любой сложности</li>
+						<li>Мобильных приложений для iOS и Android</li>
+						<li>Слайдшоу и видео для корпоративных презентаций</li>
+					</ul>
+				</li>
+				<li>
+					<div class="about__us__img"></div>
+					<span class="fonts__bold tac">
+						с 2004 года Любим точность во всем:
+					</span>
+					<ol class="statistic">
+						<li>
+							<p class="percentage">
+								146<sup>%</sup>
+							</p>
+							<p>
+								Уровень самоотдачи
+							</p>
+						</li>
+						<li>
+							<p class="percentage">
+								100<sup>%</sup>
+							</p>
+							<p>
+								Соблюдение сроков
+							</p>
+						</li>
+						<li>
+							<p class="percentage">
+								50<sup>%</sup>
+							</p>
+							<p>
+								Минимальная предоплата
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<hr class="separator">
+		</section>
+		<section class="partners">
+			<ul>
+				<li>
+					<img src="img/partners/html__academy.png" width="199" height="68" alt="HTML академия">
+				</li>
+				<hr class="vertical__separator">
+				<li>
+					<img src="img/partners/borodinsky.png" width="209" height="87" alt="Бородинский">
+				</li>
+				<hr class="vertical__separator">
+				<li>
+					<img src="img/partners/pink.png" width="185" height="52" alt="Пинк">
+				</li>
+				<hr class="vertical__separator">
+				<li>
+					<img src="img/partners/mishka.png" width="173" height="84" alt="Мишка">
+				</li>
+			</ul>
+			<hr class="separator">
 		</section>
 	</main>
 	<footer class="main__footer">
