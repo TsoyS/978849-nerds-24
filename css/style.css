@@ -38,7 +38,21 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
+
 }
+
+
+.main__menu__list a:hover,
+.main__menu__list a:focus,
+.user__menu__list a:hover,
+.user__menu__list a:focus {
+	color: #fb565a;
+}
+
+.main__menu__list a:active,
+.user__menu__list a:active {
+	color: #b4b4b4;
+} 
 
 /*-----END HEADER-----*/
 
@@ -180,15 +194,15 @@ body {
 /*----END ABOUT US-----*/
 
 
-/*-----PARTNERS-----*/
+/*-----PORTFOLIO-----*/
 
-.partners ul {
+.portfolio ul {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
 
-.partners img {
+.portfolio img {
 	display: block;
 }
 
@@ -199,7 +213,7 @@ body {
 	border: none;
 }
 
-/*-----END PARTNERS-----*/
+/*-----END PORTFOLIO-----*/
 
 /*-----FOOTER-----*/
 
