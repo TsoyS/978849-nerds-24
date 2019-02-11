@@ -27,6 +27,26 @@ body {
 	background-color: #eeeeee;
 }
 
+.main__menu {
+	display: flex;
+	justify-content: space-between;
+	width: 1160px;
+	height: 65px;
+	margin: 0 auto;
+}
+
+.main__menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 438px;
+	padding: 0;
+}
+
+.user__menu__list {
+	display: flex;
+}
+
 .main__menu__list,
 .user__menu__list {
 	list-style: none;
@@ -59,7 +79,7 @@ body {
 /*------FEATURE------*/
 
 .container {
-	width: 1170px;
+	width: 1160px;
 	margin: 0 auto;
 }
 
@@ -71,6 +91,7 @@ body {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	padding: 0;
 }
 
 .feature__img {
