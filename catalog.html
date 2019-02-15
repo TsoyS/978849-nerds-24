@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог | Дизайн-студия «Nerds»</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main__header">
@@ -36,110 +39,126 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <h1>Магазин готовых шаблонов</h1>
-    <section class="filter">
-      <h2 class="visually__hidden">Фильтры</h2>
-      <h3>Стоимость</h3>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <input type="range" min="0" max="3000">
-        <fieldset>
-          <legend>Сетка</legend>
-          <ul>
-            <li>
-              <input type="radio" name="grid" value="adaptive" checked>Адаптивная
-            </li>
-            <li>
-              <input type="radio" name="grid" value="fixed">Фиксированная
-            </li>
-            <li>
-              <input type="radio" name="grid" value="rubber">Резиновая
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" id="slider" name="features" value="slider"  checked>
-              <label for="slider">Слайдер</label>
-            </li>
-            <li>
-              <input type="checkbox" id="feature__block" name="features" value="feature__block">
-              <label for="feature__block">Блок преимущест</label>
-            </li>
-            <li>
-              <input type="checkbox" id="news" name="features" value="news" checked>
-              <label for="news">Новости</label>
-            </li>
-            <li>
-              <input type="checkbox" id="gallery" name="features" value="gallery">
-              <label for="gallery">Галерея</label>
-            </li>
-            <li>
-              <input type="checkbox" id="cart" name="features" value="cart">
-              <label for="cart">Корзина</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <button type="submit">Показать</button>
-    </section>
-    <section class="catalog">
-      <h2 class="visually__hidden">Каталог товаров</h2>
-      <div class="catalog__filter">
-        <div class="filter__column">
-          <h3>Сортировать</h3>
+  <main class="inner__container">
+    <h1 class="inner__title">Магазин готовых шаблонов</h1>
+    <ul class="inner__template">
+      <section class="filter">
+        <h2 class="visually__hidden">Фильтры</h2>
+        <form class="filter__list" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter__item">
+            <legend>Стоимость:</legend>
+            <div class="range__filter">
+              <div class="range__controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle__min"></div>
+                <div class="toggle toggle__max"></div>
+              </div>
+              <div class="price__controls">
+                <label class="min__price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max__price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend class="radio__title">Сетка:</legend>
+            <ul class="radio__list">
+              <li>
+                <input type="radio" name="grid" value="adaptive" checked>Адаптивная
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fixed">Фиксированная
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber">Резиновая
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend>Особенности:</legend>
+            <ul class="checkbox__list">
+              <li>
+                <input type="checkbox" id="slider" name="features" value="slider"  checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" id="feature__block" name="features" value="feature__block">
+                <label for="feature__block">Блок преимущест</label>
+              </li>
+              <li>
+                <input type="checkbox" id="news" name="features" value="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="gallery" name="features" value="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="cart" name="features" value="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button class="filter__button" type="submit">Показать</button>
+      </section>
+      <section class="catalog">
+        <h2 class="visually__hidden">Каталог товаров</h2>
+        <div class="catalog__filter">
+          <div class="filter__column">
+            <h3>Сортировать</h3>
+          </div>
+          <div class="filter__column">
+            <ul class="main__filter__list">
+              <li>
+                <a href="#">
+                  По цене
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  По типу
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  По названию
+                </a>
+              </li>
+              <li>
+                <a href="#" area-label="Фильтровать по убыванию цены" class="down__arrow">
+                  <img src="img/icons/down.jpg" width="11" height="10" alt="Стрелка вниз">
+                </a>
+                <a href="#" area-labe="Фильтровать по возрастанию цены">
+                  <img src="img/icons/up.jpg" width="11" height="10" alt="Стрелка вверх">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="filter__column">
-          <ul>
-            <li>
-              <a href="#">
-                По цене
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                По типу
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                По названию
-              </a>
-            </li>
-            <li>
-              <a href="#" area-label="Фильтровать по убыванию цены">
-                <img src="img/icons/down.jpg" width="11" height="10" alt="Стрелка вниз">
-              </a>
-              <a href="#" area-labe="Фильтровать по возрастанию цены">
-                <img src="img/icons/up.jpg" width="11" height="10" alt="Стрелка вверх">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <ul class="catalog__list">
-        <li>
-          <img src="img/catalog/sedona.jpg" width="360" height="576" alt="шаблон «Седона»">
-        </li>
-        <li>
-          <img src="img/catalog/pink.jpg" width="360" height="576" alt="шаблон «Седона»">
-        </li>
-        <li>
-          <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="шаблон «Барбершоп»">
-        </li>
-        <li>
-          <img src="img/catalog/mishka.jpg" width="360" height="576" alt="шаблон «Мишка»">
-        </li>
-        <li>
-          <img src="img/catalog/aplus.jpg" width="360" height="576" alt="шаблон «A+»">
-        </li>
-        <li>
-          <img src="img/catalog/kvast.jpg" width="360" height="576" alt="шаблон «Кваст»">
-        </li>
-      </ul>
-    </section>
+        <ul class="catalog__list">
+          <li>
+            <img src="img/catalog/sedona.jpg" width="360" height="576" alt="шаблон «Седона»">
+          </li>
+          <li>
+            <img src="img/catalog/pink.jpg" width="360" height="576" alt="шаблон «Седона»">
+          </li>
+          <li>
+            <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="шаблон «Барбершоп»">
+          </li>
+          <li>
+            <img src="img/catalog/mishka.jpg" width="360" height="576" alt="шаблон «Мишка»">
+          </li>
+          <li>
+            <img src="img/catalog/aplus.jpg" width="360" height="576" alt="шаблон «A+»">
+          </li>
+          <li>
+            <img src="img/catalog/kvast.jpg" width="360" height="576" alt="шаблон «Кваст»">
+          </li>
+        </ul>
+      </section>
+    </ul>
   </main>
   <footer class="main__footer">
     <ul class="social__list">

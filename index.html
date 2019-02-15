@@ -30,7 +30,7 @@
       <ul class="user__menu__list">
         <li>
           <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+            <svg class="user__cart" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
           </a>
         </li>
         <li>
@@ -38,7 +38,7 @@
         </li>
       </ul>
     </nav>
-    <!-- <div class="main__slider">Slider</div> -->
+    <div class="main__slider">Slider</div>
   </header>
   <main class="container">
     <h1 class="visually__hidden">Дизайн-студия Нёрдс</h1>
@@ -50,7 +50,7 @@
           <p>
             Мир никогда не будет прежним после того как увидит ваш сайт!
           </p>
-          <a href="#">Заказать</a>
+          <a class="order__btn red__color" href="#">Заказать</a>
         </li>
         <li>
           <div class="feature__img"></div>
@@ -58,16 +58,16 @@
           <p>
             Покорите топ-10 приложений в AppStore и Google Play
           </p>
-          <a href="#">Заказать</a>
+          <a class="order__btn green__color" href="#">Заказать</a>
         </li>
         <li>
-          <div class="feature__img"></div>
+          <div class="feature__img yellow__color"></div>
           <h3>Презентации</h3>
           <p>
             Вы даже не подозреваете, 
             насколько вы изумительны!
           </p>
-          <a href="#">Заказать</a>
+          <a class="order__btn" href="#">Заказать</a>
         </li>
       </ul>
       <hr class="separator">
@@ -75,16 +75,16 @@
     <section class="about__us">
       <h2 class="visually__hidden">О нас</h2>
       <ul class="two__columns">
-        <li>
-          <span class="subtitle">
+        <li class="left__column">
+          <p class="subtitle">
             Мы — маленькая, но гордая
             дизайн-студия из Краснодара. 
-          </span>
+          </p>
           <p class="info__text">
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            Исповедуем принципы минимализма и чистотвыы. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <p class="fonts__bold">
+          <p class="services__title">
             Выполняем заказы на разработку:
           </p>
           <ul class="services__text">
@@ -93,44 +93,44 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </li>
-        <li>
+        <li class="right__column">
           <div class="about__us__img"></div>
-          <span class="fonts__bold tac">
-            с 2004 года Любим точность во всем:
-          </span>
-          <ol class="statistic">
-            <li>
+          <p class="statistic__text">
+            с 2004 года любим точность во всем:
+          </p>
+          <div class="statistic">
+            <div class="statistic__item">
               <p class="percentage">
                 146<sup>%</sup>
               </p>
               <p>
                 Уровень самоотдачи
               </p>
-            </li>
-            <li>
+            </div>
+            <div class="statistic__item">
               <p class="percentage">
                 100<sup>%</sup>
               </p>
               <p>
                 Соблюдение сроков
               </p>
-            </li>
-            <li>
+            </div>
+            <div class="statistic__item">
               <p class="percentage">
                 50<sup>%</sup>
               </p>
               <p>
                 Минимальная предоплата
               </p>
-            </li>
-          </ol>
+            </div>
+          </div>
         </li>
       </ul>
       <hr class="separator">
     </section>
     <section class="portfolio">
       <h2 class="visually__hidden">Наше портфолио</h2>
-      <ul>
+      <ul class="portfolio__list">
         <li>
           <img src="img/portfolio/html__academy.png" width="199" height="68" alt="HTML академия">
         </li>
@@ -155,7 +155,9 @@
       </ul>
       <hr class="separator">
     </section>
-    <!-- <section class="map"></section> -->
+    <section class="map">
+      
+    </section>
     <section class="contact__modal">
       <h2>Напишите нам</h2>
         <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
