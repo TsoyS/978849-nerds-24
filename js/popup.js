@@ -35,7 +35,7 @@ form.addEventListener("submit", function(evt) {
 	evt.preventDefault();
 	if (!user__name.value || !email.value || !message.value) {
 		evt.preventDefault();
-		console.log("Нужно заполнить все поля");
+		popup.classList.add("modal__error");
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("user__name", user__name.value);
@@ -64,6 +64,11 @@ function validate() {
 		message.style.border = "2px solid #e74246";
 		return false;
 	} else {
-		return true;
+		return form.submit();
 	}
 }
+
+form.addEventListener("submit", function(evt) {
+	evt.preventDefault();
+	return validate();
+});
